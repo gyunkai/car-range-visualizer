@@ -56,16 +56,6 @@ conda activate ev_range
    python src/example.py
    ```
 
-## Setup
-
-1. Clone this repository
-2. Install dependencies: `pip install -r requirements.txt`
-3. Create a `.env` file with your API keys:
-   ```
-   ORS_API_KEY=your_openrouteservice_api_key
-   GOOGLE_API_KEY=your_google_maps_api_key  # Optional
-   ```
-
 ## Usage
 
 ### Command Line Interface
