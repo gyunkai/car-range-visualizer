@@ -52,9 +52,6 @@ conda activate ev_range
 4. Verify installation:
 
    ```bash
-   # Run the test suite
-   python src/test.py
-
    # Try the example script
    python src/example.py
    ```
@@ -68,7 +65,6 @@ conda activate ev_range
    ORS_API_KEY=your_openrouteservice_api_key
    GOOGLE_API_KEY=your_google_maps_api_key  # Optional
    ```
-4. Run the main script: `python src/main.py`
 
 ## Usage
 
@@ -96,29 +92,6 @@ Command line options:
 - `--directions`: Number of directions to check (default: 16, higher values create smoother polygons)
 - `--use-google`: Use Google Maps API instead of OpenRouteService
 - `--output`: Output HTML file path (default: ev_range_map.html)
-
-### Python API
-
-You can also use the EVRangeVisualizer class directly in your Python code:
-
-```python
-from ev_range import EVRangeVisualizer
-
-# Initialize with a starting location
-visualizer = EVRangeVisualizer(
-    start_location=(52.5200, 13.4050),  # Berlin coordinates
-    battery_range=150,  # km
-    efficiency_buffer=10,  # km
-    num_directions=16,  # Number of directions to check (higher = smoother polygon)
-    use_google=False  # Use OpenRouteService API (default)
-)
-
-# Generate the range visualization
-visualizer.generate_range_map()
-
-# Save the map
-visualizer.save_map("ev_range_map.html")
-```
 
 ### Example Locations
 
@@ -151,14 +124,6 @@ The tool generates an interactive HTML map that can be opened in any web browser
 3. A blue polygon representing the maximum reachable area
 
 The interactive map allows zooming, panning, and clicking on markers to see additional information.
-
-### Running Tests
-
-To verify that the tool is working correctly, you can run the included unit tests:
-
-```bash
-python src/test.py
-```
 
 ## API Keys
 
