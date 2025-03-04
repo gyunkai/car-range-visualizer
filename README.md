@@ -1,4 +1,4 @@
-# EV Range Visualization
+# Car Range Visualizer
 
 A Python prototype that calculates and visualizes the maximum reachable area for an electric vehicle (EV) based on a given starting point and remaining battery range. This tool uses real navigation-based distances rather than simple radius-based estimations.
 
@@ -164,11 +164,3 @@ python src/test.py
 
 - **OpenRouteService API** (default): Get a free key from [openrouteservice.org/dev/#/signup](https://openrouteservice.org/dev/#/signup)
 - **Google Maps API** (optional): Get a key from [console.cloud.google.com](https://console.cloud.google.com/google/maps-apis/credentials)
-
-## Requirements
-
-See `requirements.txt` for a list of dependencies.
-
-## License
-
-MIT
